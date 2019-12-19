@@ -9,16 +9,15 @@ function setCart(c) {
   return cart;
 }
 
+
+
 function addToCart(item) {
  var itemObj = {itemName: item, itemPrice: Math.floor(Math.random() * 100)};
  cart.push(itemObj);
  return `${item} has been added to your cart.`;
 }
 
-// addToCart('coffee');
-// addToCart('creamer');
-// addToCart('bagel');
-// console.log(cart);
+
 
 function viewCart() {
   var cartContents = '';
@@ -38,16 +37,7 @@ function viewCart() {
   }
 }
 
-// function veiwCartJoin() {
-//   const cartContents = [];
-//   for (let i = 0; i < cart.length; i++) {
-//     cartContents.push(`${cart[i].itemName} at \$${cart[i].itemPrice}`);
-//   }
-//   return `In your cart, you have ${cartContents.join(', ')}.`;
-// }
 
-//viewCart();
-//veiwCartJoin();
 
 function total() {
   let totalPrice = 0;
@@ -57,7 +47,7 @@ function total() {
   return totalPrice;
 }
 
-//console.log(total());
+
 
 function removeFromCart(item) {
   let checkRemove = 0;
@@ -74,8 +64,7 @@ function removeFromCart(item) {
   }
 }
 
-//removeFromCart('creamer');
-//removeFromCart('potato');
+
 
 function placeOrder(cardNumber) {
   if (!cardNumber) {
@@ -87,4 +76,4 @@ function placeOrder(cardNumber) {
   }
 }
 
-//placeOrder(1234567890);
+
